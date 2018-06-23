@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BillPageCont">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1024.0">
+         <children>
+            <HBox prefHeight="41.0" prefWidth="1024.0">
+               <children>
+                  <Label text="Label">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <Region prefHeight="21.0" prefWidth="188.0" HBox.hgrow="ALWAYS" />
+                  <Label text="Label">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <Label text="Label">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label contentDisplay="CENTER" prefHeight="43.0" prefWidth="447.0" text="The Best">
+               <font>
+                  <Font size="57.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="51.0" prefWidth="600.0">
+               <children>
+                  <Label text="Customer name:">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="customernameid" onAction="#CustomernameEnter" prefHeight="39.0" prefWidth="245.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="10.0" text="Mobile No:">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="mobileid" layoutX="38.0" layoutY="10.0" onAction="#MoblieNoClicked" prefHeight="39.0" prefWidth="238.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="187.0" layoutY="10.0" text="Order no.">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Orderid" layoutX="215.0" layoutY="10.0" onAction="#OrderEntered" prefHeight="47.0" prefWidth="84.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#464a4d" height="21.0" stroke="BLACK" strokeType="INSIDE" width="1024.0" />
+            <HBox prefHeight="55.0" prefWidth="1024.0">
+               <children>
+                  <TextField fx:id="mealid" alignment="CENTER" prefHeight="53.0" prefWidth="228.0" promptText="Enter Meal">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Region prefHeight="55.0" prefWidth="87.0" />
+                  <CheckBox fx:id="extracheese" alignment="CENTER" mnemonicParsing="false" prefHeight="55.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </CheckBox>
+                  <Region prefHeight="55.0" prefWidth="76.0" />
+                  <TextField fx:id="extraitemid" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="217.0" promptText="Extra Item">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="quantityid" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="70.0" promptText="Qty">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="AddButtonid" alignment="CENTER" mnemonicParsing="false" onAction="#AddButtonClicked" prefHeight="37.0" prefWidth="69.0" text="Add" textFill="#56b533">
+                     <HBox.margin>
+                        <Insets left="50.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Italic" size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <TableView fx:id="table" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="1024.0">
+              <columns>
+                <TableColumn fx:id="MealColumn" minWidth="-1.0" prefWidth="223.6666717529297" text="Meal" />
+                  <TableColumn fx:id="Itemcolumn" minWidth="0.0" prefWidth="248.66668701171875" text="Extra Item" />
+                  <TableColumn fx:id="QtyColumn" minWidth="0.0" prefWidth="108.66668701171875" sortable="false" text="Qty" />
+              </columns>
+            </TableView>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="PrintButtonid" mnemonicParsing="false" onAction="#PrintButtonClicked" text="PRINT" />
+                  <Button fx:id="TotalButtonid" mnemonicParsing="false" onAction="#TotalButtonClicked" text="TOTAL" />
+                  <Button fx:id="NewButtonid" mnemonicParsing="false" onAction="#NewButtonClicked" text="NEW" />
+                  <TextField fx:id="TotalTextid" alignment="CENTER_RIGHT" onAction="#TotalTextEntered" prefHeight="25.0" prefWidth="145.0" />
+               </children></HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

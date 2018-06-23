@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1024.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sample.GUIpageCont">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.rowIndex="2" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="210.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label alignment="CENTER" layoutX="20.0" layoutY="49.0" prefHeight="59.0" prefWidth="326.0" text="Employee" textFill="#359cae" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="20.0" layoutY="49.0" prefHeight="59.0" prefWidth="316.0" text="Costomer Analysis" textFill="#359cae" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="20.0" layoutY="49.0" prefHeight="59.0" prefWidth="328.0" text="Selling Analysis" textFill="#359cae" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="20.0" layoutY="49.0" prefHeight="59.0" prefWidth="325.0" text="Edit Design" textFill="#359cae" GridPane.columnIndex="1">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="20.0" layoutY="49.0" prefHeight="59.0" prefWidth="330.0" text="Order Record" textFill="#359cae" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="20.0" layoutY="49.0" prefHeight="59.0" prefWidth="325.0" text="Costomer Data" textFill="#359cae" GridPane.rowIndex="2">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="20.0" layoutY="49.0" prefHeight="59.0" prefWidth="328.0" text="Edit Menu" textFill="#359cae" GridPane.rowIndex="1">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="358.0" layoutY="366.0" prefHeight="59.0" prefWidth="326.0" text="logout" textFill="#359cae" GridPane.columnIndex="2">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Button fx:id="CreatetableButton" mnemonicParsing="false" onAction="#CreateTableButtonClicked" prefHeight="233.0" prefWidth="326.0" text="Create Bill" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</GridPane>
